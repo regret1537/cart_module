@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<extension type="plugin" version="2.5" method="upgrade" group="hikashoppayment">    
+	<name>HikaShop Allpay payment plugin</name>
+	<creationDate>December 2014</creationDate>
+	<version>1.0.0</version>
+	<author>www.allpay.com.tw</author>
+	<authorEmail>shawn.chang@allpay.com.tw</authorEmail>
+	<authorUrl>http://roger.sunup.net</authorUrl>
+	<copyright>Copyright (C) 2010 roger SOFTWARE SARL - All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>This plugin enables you to setup your Hikashop for Joomla allpay payment system</description>
+	<files>
+		<filename plugin="allpay">allpay.php</filename>
+		<filename>AllPay.Payment.Integration.php</filename>
+		<filename>response.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<params addpath="/components/com_hikashop/params">
+		<param name="pluginoptions" type="pluginoptions" default="plugin" label="hikashop" description="HikaShop options" />
+	</params>
+	<config>
+		<fields name="params" addfieldpath="/components/com_hikashop/fields">
+			<fieldset name="basic">
+				<field id="pluginoptions" name="pluginoptions" type="pluginoptions" label="hikashop" description="HikaShop options" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
